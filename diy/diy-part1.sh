@@ -34,5 +34,5 @@ sed -i 's/OpenWrt/xsm/g' package/base-files/files/bin/config_generate
 git clone https://github.com/destan19/OpenAppFilter.git ./package/lean/OpenAppFilter
 git clone https://github.com/smzhzy/openwrt-smartdns.git ./package/lean/smartdns
 git clone -b 18.06 https://github.com/garypang13/luci-theme-edge.git ./package/lean/luci-theme-edge
-git clone https://github.com/lisaac/luci-app-dockerman.git ./package/lean/dockerman && mv -f ./package/lean/dockerman/applications/luci-app-dockerman ./package/lean/ ; rm -Rf ./package/lean/dockerman
+git clone https://github.com/lisaac/luci-app-dockerman.git ./package/lean/dockerman && cd package/lean/dockerman && git reset --hard 35bcfd9de && cd ~/openwrt && mv -f ./package/lean/dockerman/applications/luci-app-dockerman ./package/lean/ ; rm -Rf ./package/lean/dockerman
 exit 0
