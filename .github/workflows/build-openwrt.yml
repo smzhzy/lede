@@ -20,8 +20,8 @@ env:
 
 # 触发条件
 on:
-  schedule:
-    - cron: 33 21 */9 * *
+#  schedule:
+#    - cron: 33 21 */9 * *
   workflow_dispatch:
 
 jobs:
